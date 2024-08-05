@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="custom-select-box">
                         <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
 						<option>¥ JPY</option>
@@ -83,18 +83,18 @@
                     </div>
                     <div class="right-phone-box">
                         <p>Call US :- <a href="#"> +11 900 800 100</a></p>
-                    </div>
+                    </div> -->
                     <div class="our-link">
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Our location</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="my-account.html">Login</a></li>
+                            <li><a href="my-account.html">Sign Up</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- End Main Top -->
 
     <!-- Start Main Top -->
@@ -107,7 +107,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/sowetowhite.jpg" height="90px" width="165px" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -174,8 +174,9 @@
                             </ul>
                         </li>
                         <li class="dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Shop</a>
                             <ul class="dropdown-menu">
+                                <li><a href="shop.html">Shop</a></li>
                                 <li><a href="cart.html">Cart</a></li>
                                 <li><a href="checkout.html">Checkout</a></li>
                                 <li><a href="my-account.html">My Account</a></li>
@@ -263,7 +264,52 @@
     <!-- End All Title Box -->
 
     <!-- Start My Account  -->
-    <div class="my-account-box-main">
+     <br><br>
+    <div class="container">
+        <div class="row new-account-login">
+            <div class="col-sm-6 col-lg-6 mb-3">
+                <div class="title-left">
+                    <h3>Account Login</h3>
+                </div>
+                <h5><a data-toggle="collapse" href="#formLogin" role="button" aria-expanded="false">Click here to Login</a></h5>
+                <form id="formLogin">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="InputEmail" class="mb-0">Email Address</label>
+                            <input type="email" class="form-control" id="InputEmail" placeholder="Enter Email"> </div>
+                        <div class="form-group col-md-6">
+                            <label for="InputPassword" class="mb-0">Password</label>
+                            <input type="password" class="form-control" id="InputPassword" placeholder="Password"> </div>
+                    </div>
+                    <button type="submit" class="btn hvr-hover">Login</button>
+                </form>
+            </div>
+            <div class="col-sm-6 col-lg-6 mb-3">
+                <div class="title-left">
+                    <h3>Create New Account</h3>
+                </div>
+                <h5><a data-toggle="collapse" href="#formRegister" role="button" aria-expanded="false">Click here to Sign Up</a></h5>
+                <form id="formRegister">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="InputName" class="mb-0">First Name</label>
+                            <input type="text" class="form-control" id="InputName" placeholder="First Name"> </div>
+                        <div class="form-group col-md-6">
+                            <label for="InputLastname" class="mb-0">Last Name</label>
+                            <input type="text" class="form-control" id="InputLastname" placeholder="Last Name"> </div>
+                        <div class="form-group col-md-6">
+                            <label for="InputEmail1" class="mb-0">Email Address</label>
+                            <input type="email" class="form-control" id="InputEmail1" placeholder="Enter Email"> </div>
+                        <div class="form-group col-md-6">
+                            <label for="InputPassword1" class="mb-0">Password</label>
+                            <input type="password" class="form-control" id="InputPassword1" placeholder="Password"> </div>
+                    </div>
+                    <button type="submit" class="btn hvr-hover">Register</button>
+                </form>
+            </div>
+        </div>
+    
+    <!-- <div class="my-account-box-main">
         <div class="container">
             <div class="my-account-page">
                 <div class="row">
@@ -437,89 +483,251 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End My Account -->
+     <!-- Test For Modal Sign Up -->
+     <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        /* Add a background color when the inputs get focus */
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #04AA6D;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        button:hover {
+          opacity:1;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 14px 20px;
+          background-color: #f44336;
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+          float: left;
+          width: 50%;
+        }
+        
+        /* Add padding to container elements */
+        .container {
+          padding: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: #474e5d;
+          padding-top: 50px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 10% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 50%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* Style the horizontal ruler */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+         
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 35px;
+          top: 15px;
+          font-size: 40px;
+          font-weight: bold;
+          color: #f1f1f1;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #f44336;
+          cursor: pointer;
+        }
+        
+        /* Clear floats */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        <body>
+        
+        
+        
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+        
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <form class="modal-content" action="index.html">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+        
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+
+     <!-- End of Test -->
 
     <!-- Start Instagram Feed  -->
     <div class="instagram-box">
         <div class="main-instagram owl-carousel owl-theme">
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <img src="images/slide1 (1).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <img src="images/slide1 (4).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <img src="images/background.jpg" alt="" />
                     <div class="hov-in">
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!--  -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <img src="images/slide1 (15).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <img src="images/slide1 (16).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <img src="images/slide1 (6).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <img src="images/slide1 (10).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-08.jpg" alt="" />
+                    <img src="images/slide1 (2).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <img src="images/slide1 (14).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <img src="images/slide1 (18).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -535,17 +743,19 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
-                            <h4>About ThewayShop</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <h4>About Soweto Style</h4>
+                            <p>Soweto Style Clothing, manufacture uniquely branded men’s and ladies T-shirts, baseball caps and sweat shirts, all bearing the trade mark , which is synonymous with the brand in both Soweto and surrounding areas.
                                 </p>
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/people/Soweto-Style-Clothing-Store/100038549293876/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <!--
                                 <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                -->
+                                <li><a href="https://www.instagram.com/sowetostyle_sa?igsh=MWlydTFxeWF3cHRu"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://wa.me/+27783387270"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -567,14 +777,25 @@
                             <h4>Contact Us</h4>
                             <ul>
                                 <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 3756 <br>Preston Street Wichita,<br> KS 67213 </p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: <a href="https://maps.app.goo.gl/MubXc19vjdyAgnzUA">352 Elias Motsoaledi Road,<br> Mofolo South, <br>Johannesburg, <br> 1801</a> </p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel: 078 338 7270">078 338 7270</a><br><a href="tel: 083 710 0089">083 710 0089</a></a></p>
                                 </li>
                                 <li>
                                     <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
                                 </li>
+                                <div>
+                                <li>
+                                    <p><i class="fa-solid fa-business-time"></i>Operating Hours: 
+                                        <p>Monday - Saturday</p>
+                                        <p>09:00 - 18:00</p>
+                                        <p>Sunday & Public Holidays</p>
+                                        <p>09:00 - 16:00</p>
+                                        
+                                        
+                                </li>
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -586,8 +807,7 @@
 
     <!-- Start copyright  -->
     <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
-            <a href="https://html.design/">html design</a></p>
+        <p class="footer-company">All Rights Reserved. &copy; 2008 <a href="#">Soweto Style</a></p>
     </div>
     <!-- End copyright  -->
 
