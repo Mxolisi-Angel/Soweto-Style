@@ -37,6 +37,12 @@
     height: auto;
 }
 
+#new-color {
+    background-color: #e5eaec;
+    color: #e5eaec;
+}
+
+
 #id-contact {
     background-color: gray;
     border: none;
