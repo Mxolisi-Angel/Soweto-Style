@@ -32,7 +32,30 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
- body {
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+#new-color {
+    background-color: #e5eaec;
+    color: #e5eaec;
+}
+
+
+#id-contact {
+    background-color: gray;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+#bold-font {
+    font-weight: bold;
+    
+}
+
+body {
      color: #666666;
      font-size: 15px;
      font-family: 'Quattrocento Sans', sans-serif;
@@ -1336,7 +1359,7 @@
 }
 /*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
  .all-title-box{
-     background: url("../images/all-bg-title.jpg") no-repeat center center;
+     background: url("../images/itsthelifewebelievein/IMG_8359.jpg") no-repeat center center;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -ms-background-size: cover;
