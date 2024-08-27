@@ -35,6 +35,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        .product { margin-bottom: 20px; }
+        .hidden { display: none; }
+    </style>
+
 </head>
 
 <body>
@@ -173,7 +178,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <!-- <li class="search"><a href="#"><i class="fa fa-search"></i></a></li> -->
                         <li class="side-menu"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>    
 					</ul>
                 </div>
@@ -248,8 +253,9 @@
                     <div class="product-categori">
                         <div class="search-product">
                             <form action="#">
-                                <input class="form-control" placeholder="Search here..." type="text">
-                                <button type="submit"> <i class="fa fa-search"></i> </button>
+                                <input type="text" id="searchInput" placeholder="Search for products..." oninput="searchProducts()">
+
+                                <!-- <button type="submit"> <i class="fa fa-search"></i> </button> -->
                             </form>
                         </div>
                         <div class="filter-sidebar-left">
@@ -262,11 +268,13 @@
 								</a>
                                     <div class="collapse show" id="sub-men1" data-parent="#list-group-men">
                                         <div class="list-group">
-                                            <a href="#" class="list-group-item list-group-item-action">Soweto Style T-Shirts <small class="text-muted">(50)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">#Off to Play with Kids T-Shirts <small class="text-muted">(10)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Soweto Style Sweater Round Neck  <small class="text-muted">(10)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Soweto Style Zip Jackets <small class="text-muted">(10)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">All Season Jackets <small class="text-muted">(20)</small></a>
+                                            <div class="list-group-item list-group-item-action"> Knitted Soweto Style Golfer T-Shirts <small class="text-muted">(50)</small></div>
+                                            <div class="list-group-item list-group-item-action">Knitted Soweto Style Sweater's <small class="text-muted">(20)</small></div>
+                                            <div class="list-group-item list-group-item-action">Knitted Soweto Style Ladies Dress  <small class="text-muted">(15)</small></div>
+                                            <div class="list-group-item list-group-item-action">SS Classic T-Shirts <small class="text-muted">(25)</small></div>
+                                            <div class="list-group-item list-group-item-action"> SS Classic Sweater <small class="text-muted">(20)</small></div>
+                                            <div class="list-group-item list-group-item-action"> Teddy SS T-Shirt <small class="text-muted">(50)</small></div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -276,9 +284,10 @@
 								</a>
                                     <div class="collapse" id="sub-men2" data-parent="#list-group-men">
                                         <div class="list-group">
-                                            <a href="#" class="list-group-item list-group-item-action">Denim <small class="text-muted">(10)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Hats - Caps - Beanie's <small class="text-muted">(20)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action"> Ladies Dress<small class="text-muted">(20)</small></a>
+                                            <div  class="list-group-item list-group-item-action"> Soweto Style Denim Shirts <small class="text-muted">(15)</small></div>
+                                            <div class="list-group-item list-group-item-action"> Soweto Style Two Piece Denim <small class="text-muted">(20)</small></div>
+                                            <div class="list-group-item list-group-item-action">Hats - Caps - Beanie's <small class="text-muted">(20)</small></div>
+                                            <div class="list-group-item list-group-item-action">Soweto Style Jackets <small class="text-muted">(30)</small></div>
                                         </div>
                                     </div> 
                                </div>
@@ -834,8 +843,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Exclusive Golf T-shirt Orange</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Golfer  - Orange</h4>
+                                                            <p class="card-text shop-item-price">Rs 1500.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -849,7 +858,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8510.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8476.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -860,8 +869,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Golf T-shirt</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Golfer - Red</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 500.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -875,7 +884,7 @@
                                                             <div class="type-lb">
                                                                 <p class="new">New</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8553.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8464.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -886,8 +895,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">SS Golf T-shirt</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Golfer - Black </h4>
+                                                            <p class="card-text shop-item-price">Rs 1 500.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -901,7 +910,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8450.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8469.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -912,8 +921,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style T Shirt</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title"> Knitted Soweto Style Golfer - Grey</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 500.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -922,6 +931,189 @@
                                                 </div>
                                             </div>
                                             <div class="row special-list row-cols-md-4 row-cols-2 g-4">
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="sale">Sale</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/Bottle green.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Golfer </h4>
+                                                            <p class="card-text shop-item-price">Rs 1 500.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="new">New</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8487.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Sweater</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 600.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="new">New</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8491.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Sweater</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 600.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="new">New</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8492.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Style Sweater</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 600.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row special-list row-cols-md-4 row-cols-2 g-4">
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="sale">Sale</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8481.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title"> Knitted Soweto Style Sweater </h4>
+                                                            <p class="card-text shop-item-price">Rs 1 600.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="sale">Sale</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8499.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title"> Knitted Soweto Style Sweater </h4>
+                                                            <p class="card-text shop-item-price">Rs 1 600.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="sale">Sale</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8529.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title">Knitted Soweto Stlye Ladies Dress</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 700.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
                                                 <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
                                                     <div class="products-single fix card-h-100">
                                                         <div class="box-img-hover">
@@ -939,86 +1131,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Ladies & Gentleman of Soweto Style</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="new">New</p>
-                                                            </div>
-                                                            <img src="images/IMG_ss1 (10).jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Custom jackets London Spice</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="new">New</p>
-                                                            </div>
-                                                            <img src="images/sssweaters.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Sweaters</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="new">New</p>
-                                                            </div>
-                                                            <img src="images/IMG_ss1 (4).jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Two Piece Denim</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title">Soweto Style Knitted Golfer's His & Her's</h4>
+                                                            <p class="card-text shop-item-price">Rs 1 500.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -1033,7 +1147,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8438-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8553.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -1044,7 +1158,7 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title"> Soweto Style Jackets</h4>
+                                                            <h4 class="card-title shop-item-title"> Soweto Style Classic Sweaters </h4>
                                                             <p class="card-text shop-item-price">Rs 700.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
@@ -1059,7 +1173,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_85361.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8547.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -1070,7 +1184,7 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title"># Its The Life We believe In</h4>
+                                                            <h4 class="card-title shop-item-title">Soweto Style Classic Sweaters</h4>
                                                             <p class="card-text shop-item-price">Rs 700.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
@@ -1085,7 +1199,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8295.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8540.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -1096,60 +1210,7 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Bucket Hat</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="sale">Sale</p>
-                                                            </div>
-                                                            <img src="images/itsthelifewebelievein/mag.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Two Piece Combo</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row special-list row-cols-md-4 row-cols-2 g-4">
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="sale">Sale</p>
-                                                            </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8485.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title"> Soweto Style Long Sleeve & Round Neck </h4>
+                                                            <h4 class="card-title shop-item-title">Soweto Style Classic Sweaters </h4>
                                                             <p class="card-text shop-item-price">Rs 700.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
@@ -1175,59 +1236,7 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style White Sweater</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="sale">Sale</p>
-                                                            </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8489.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Orange Long Sleeve </h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="sale">Sale</p>
-                                                            </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8433-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">SS Zip Jacket</h4>
+                                                            <h4 class="card-title shop-item-title">Soweto Style Classic Sweaters</h4>
                                                             <p class="card-text shop-item-price">Rs 700.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
@@ -1243,7 +1252,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8528.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8512.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -1254,7 +1263,33 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title"> Soweto Style Ladies Dress</h4>
+                                                            <h4 class="card-title shop-item-title"> SS Classic T-Shirt</h4>
+                                                            <p class="card-text shop-item-price">Rs 350.00</p> 
+                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                        
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                    <div class="products-single fix card-h-100">
+                                                        <div class="box-img-hover">
+                                                            <div class="type-lb">
+                                                                <p class="sale">Sale</p>
+                                                            </div>
+                                                            <img src="images/itsthelifewebelievein/IMG_8525.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                        
+                                                            <div class="mask-icon">
+                                                                <ul>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                            <div class="card-body">
+                                                            <h4 class="card-title shop-item-title">Soweto Style Denim T-Shirt</h4>
                                                             <p class="card-text shop-item-price">Rs 700.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
@@ -1269,7 +1304,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8445.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8386.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -1280,8 +1315,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title"># Its The Life We believe In - Color Collection</h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title">Soweto Style Two Piece -Denim & T-Shirt </h4>
+                                                            <p class="card-text shop-item-price">Rs 1700.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -1295,7 +1330,7 @@
                                                             <div class="type-lb">
                                                                 <p class="sale">Sale</p>
                                                             </div>
-                                                            <img src="images/itsthelifewebelievein/IMG_8470.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                            <img src="images/itsthelifewebelievein/IMG_8295.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                         
                                                             <div class="mask-icon">
                                                                 <ul>
@@ -1306,34 +1341,8 @@
                                                             </div>
                                                         </div>
                                                             <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Gray Short Sleeve </h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                           <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                        
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                            
-                                                <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                    <div class="products-single fix card-h-100">
-                                                        <div class="box-img-hover">
-                                                            <div class="type-lb">
-                                                                <p class="sale">Sale</p>
-                                                            </div>
-                                                            <img src="images/itsthelifewebelievein/Bottle green.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                        
-                                                            <div class="mask-icon">
-                                                                <ul>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                            <div class="card-body">
-                                                            <h4 class="card-title shop-item-title">Soweto Style Green Golf T- Shirt </h4>
-                                                            <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                            <h4 class="card-title shop-item-title">Soweto Style Bucket Hat </h4>
+                                                            <p class="card-text shop-item-price">Rs 250.00</p> 
                                                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                         
                                                         </div>
@@ -1348,27 +1357,6 @@
                                             <!-- All pic below -->
                                              <!-- Second section of products -->
 
-                                            <div class="products-box">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <!-- <div class="col-lg-12">
-                                                            <div class="title-all text-center">
-                                                                <h1>Featured Products</h1>
-                                                                <p>Welcome to Soweto Style Clothing Store where fashion meets culture.</p>
-                                                            </div>
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="special-menu text-center">
-                                                                <div class="button-group filter-button-group">
-                                                                    <button class="active" data-filter="*">All</button>
-                                                                    <button data-filter=".top-featured">Top featured</button>
-                                                                    <button data-filter=".best-seller">Best seller</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                     <div class="row special-list row-cols-md-4 row-cols-2 g-4">
                                                         <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
                                                             <div class="products-single fix card-h-100">
@@ -1376,7 +1364,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="new">New</p>
                                                                     </div>
-                                                                    <img src="images/red golf shirt.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8516.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1387,218 +1375,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Exclusive Golf T-shirt</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="sale">Sale</p>
-                                                                    </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8510.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Golf T-shirt</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="new">New</p>
-                                                                    </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8553.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">SS Golf T-shirt</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="sale">Sale</p>
-                                                                    </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8450.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style T Shirt</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row special-list row-cols-md-4 row-cols-2 g-4">
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="sale">Sale</p>
-                                                                    </div>
-                                                                    <img src="images/itsthelifewebelievein/comm.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Ladies & Gentleman of Soweto Style</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="new">New</p>
-                                                                    </div>
-                                                                    <img src="images/IMG_ss1 (10).jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Custom jackets London Spice</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="new">New</p>
-                                                                    </div>
-                                                                    <img src="images/sssweaters.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Sweaters</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="new">New</p>
-                                                                    </div>
-                                                                    <img src="images/IMG_ss1 (4).jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Two Piece Denim</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
-                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
-                                                                
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row special-list row-cols-md-4 row-cols-2 g-4">
-                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
-                                                            <div class="products-single fix card-h-100">
-                                                                <div class="box-img-hover">
-                                                                    <div class="type-lb">
-                                                                        <p class="sale">Sale</p>
-                                                                    </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8438-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
-                                                                
-                                                                    <div class="mask-icon">
-                                                                        <ul>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                    <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title"> Soweto Style Jackets</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Teddy SS T - Shirts</h4>
+                                                                    <p class="card-text shop-item-price">Rs 350.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1623,8 +1401,34 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title"># Its The Life We believe In</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Teddy SS T - Shirts</h4>
+                                                                    <p class="card-text shop-item-price">Rs 350.00</p> 
+                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                                
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
+                                                            <div class="products-single fix card-h-100">
+                                                                <div class="box-img-hover">
+                                                                    <div class="type-lb">
+                                                                        <p class="new">New</p>
+                                                                    </div>
+                                                                    <img src="images/slide1 (2).jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                
+                                                                    <div class="mask-icon">
+                                                                        <ul>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                    <div class="card-body">
+                                                                    <h4 class="card-title shop-item-title">Teddy SS T - Shirts</h4>
+                                                                    <p class="card-text shop-item-price">Rs 350.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1638,7 +1442,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8295.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8515.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1649,15 +1453,16 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Bucket Hat</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Teddy SS T - Shirts</h4>
+                                                                    <p class="card-text shop-item-price">Rs 350.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
                                                                 
                                                             </div>
                                                         </div>
-                                    
+                                                    </div>
+                                                    <div class="row special-list row-cols-md-4 row-cols-2 g-4">
                                                         <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
                                                             <div class="products-single fix card-h-100">
                                                                 <div class="box-img-hover">
@@ -1675,8 +1480,86 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Two Piece Combo</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title"> SS Classic T-Shirts & Jacket</h4>
+                                                                    <p class="card-text shop-item-price">Rs 1300.00</p> 
+                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                                
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
+                                                            <div class="products-single fix card-h-100">
+                                                                <div class="box-img-hover">
+                                                                    <div class="type-lb">
+                                                                        <p class="new">New</p>
+                                                                    </div>
+                                                                    <img src="images/itsthelifewebelievein/IMG_8531.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                
+                                                                    <div class="mask-icon">
+                                                                        <ul>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                    <div class="card-body">
+                                                                    <h4 class="card-title shop-item-title">Soweto Style London Spice Jackets</h4>
+                                                                    <p class="card-text shop-item-price">Rs 950.00</p> 
+                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                                
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
+                                                            <div class="products-single fix card-h-100">
+                                                                <div class="box-img-hover">
+                                                                    <div class="type-lb">
+                                                                        <p class="new">New</p>
+                                                                    </div>
+                                                                    <img src="images/itsthelifewebelievein/IMG_8535.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                
+                                                                    <div class="mask-icon">
+                                                                        <ul>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                    <div class="card-body">
+                                                                    <h4 class="card-title shop-item-title">Soweto Style SS Jackets</h4>
+                                                                    <p class="card-text shop-item-price">Rs 950.00</p> 
+                                                                   <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
+                                                                
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new top-featured">
+                                                            <div class="products-single fix card-h-100">
+                                                                <div class="box-img-hover">
+                                                                    <div class="type-lb">
+                                                                        <p class="new">New</p>
+                                                                    </div>
+                                                                    <img src="images/itsthelifewebelievein/jacket 1 (6).jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                
+                                                                    <div class="mask-icon">
+                                                                        <ul>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                    <div class="card-body">
+                                                                    <h4 class="card-title shop-item-title">Soweto Style Jackets</h4>
+                                                                    <p class="card-text shop-item-price">Rs 950.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1691,7 +1574,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8485.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8350.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1702,7 +1585,7 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title"> Soweto Style Long Sleeve & Round Neck </h4>
+                                                                    <h4 class="card-title shop-item-title"> Soweto Style Classic Sweater Collection</h4>
                                                                     <p class="card-text shop-item-price">Rs 700.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
@@ -1717,7 +1600,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8545.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8450-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1728,7 +1611,7 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style White Sweater</h4>
+                                                                    <h4 class="card-title shop-item-title">Soweto Style Denim T- Shirts Collection</h4>
                                                                     <p class="card-text shop-item-price">Rs 700.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
@@ -1743,7 +1626,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8489.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8442-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1754,8 +1637,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Orange Long Sleeve </h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Soweto Style London Spice Jackets</h4>
+                                                                    <p class="card-text shop-item-price">Rs 950.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1769,7 +1652,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8433-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8434-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1780,8 +1663,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">SS Zip Jacket</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Soweto Style SS Jackets</h4>
+                                                                    <p class="card-text shop-item-price">Rs 950.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1789,6 +1672,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <div class="row special-list row-cols-md-4 row-cols-2 g-4">
                                                         <div class="col-lg-3 col-md-6 special-grid best-seller col filter-item all new">
                                                             <div class="products-single fix card-h-100">
@@ -1796,7 +1680,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8528.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8422-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1807,8 +1691,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title"> Soweto Style Ladies Dress</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title"> Knitted Soweto Style Sweater Collection</h4>
+                                                                    <p class="card-text shop-item-price">Rs 1500.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1822,7 +1706,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8445.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8402-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1833,8 +1717,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title"># Its The Life We believe In - Color Collection</h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Knitted Soweto Style Golfer T-Shirts Collection</h4>
+                                                                    <p class="card-text shop-item-price">Rs 1500.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1848,7 +1732,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/IMG_8470.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8400-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1859,8 +1743,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Gray Short Sleeve </h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Knitted Soweto Style Ladies Dress & Golfer's</h4>
+                                                                    <p class="card-text shop-item-price">Rs 1500.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1874,7 +1758,7 @@
                                                                     <div class="type-lb">
                                                                         <p class="sale">Sale</p>
                                                                     </div>
-                                                                    <img src="images/itsthelifewebelievein/Bottle green.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
+                                                                    <img src="images/itsthelifewebelievein/IMG_8432-2.jpg" class="img-fluid card-img-top shop-item-image" alt="Image">
                                                                 
                                                                     <div class="mask-icon">
                                                                         <ul>
@@ -1885,8 +1769,8 @@
                                                                     </div>
                                                                 </div>
                                                                     <div class="card-body">
-                                                                    <h4 class="card-title shop-item-title">Soweto Style Green Golf T- Shirt </h4>
-                                                                    <p class="card-text shop-item-price">Rs 700.00</p> 
+                                                                    <h4 class="card-title shop-item-title">Teddy SS T-Shirt Collection</h4>
+                                                                    <p class="card-text shop-item-price">Rs 350.00</p> 
                                                                    <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                                                                 
                                                                 </div>
@@ -1894,6 +1778,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    
+                                                    
                                                     
                                                     
                                                     
@@ -1906,10 +1792,7 @@
                                             <!-- End Products  -->
                                             <!-- New Products Page -->
                                             
-                                              <section class="container content-section" id="shopping-cart">
-                                                  
-                                                <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
-                                               
+                                              <section class="container content-section" id="shopping-cart">                                            
                                                <table class="table table-hover table-cart">
                                                 <thead style="background-color:lightgray; font-family:Georgia, 'Times New Roman', Times, serif;">
                                                   <tr>
@@ -1930,9 +1813,9 @@
                                                   </div>
                                                
                                               
-                                                  <div class="btn-purchase" style="margin-top: 10%;">
-                                                    <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
-                                                  </div>
+                                                  <div class="col-12 d-flex shopping-box">
+                                                    <a href="checkout.html" id="checkout-btn" class="ml-auto btn hvr-hover" style="pointer-events: none; opacity: 0.5;">Proceed to Checkout</a>
+                                                </div>
                                               
                                               </section>
                                         
@@ -2047,18 +1930,18 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About Soweto Style</h4>
-                            <p>Soweto Style Clothing, manufacture uniquely branded men’s and ladies T-shirts, baseball caps and sweat shirts, all bearing the trade mark , which is synonymous with the brand in both Soweto and surrounding areas.
+                            <p>Soweto Style Clothing, manufacture uniquely branded men’s and ladies T-shirts, baseball caps and sweatshirts, all bearing the trade mark , which is synonymous with the brand in both Soweto and surrounding areas.
                                 </p>
                             <ul>
-                                <li><a href="https://www.facebook.com/people/Soweto-Style-Clothing-Store/100038549293876/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/people/Soweto-Style-Clothing-Store/100038549293876/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                                 <!--
                                 <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
                                 -->
-                                <li><a href="https://www.instagram.com/sowetostyle_sa?igsh=MWlydTFxeWF3cHRu"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="https://wa.me/+27783387270"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/sowetostyle_sa?igsh=MWlydTFxeWF3cHRu" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://wa.me/+27783387270" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -2068,9 +1951,9 @@
                             <ul>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="contact-us.html">Customer Service</a></li>
-                                <li><a href="https://maps.app.goo.gl/MubXc19vjdyAgnzUA">Our Sitemap</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="https://maps.app.goo.gl/MubXc19vjdyAgnzUA" target="_blank">Our Sitemap</a></li>
+                                <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
                                 <li><a href="#">Delivery Information</a></li>
                             </ul>
                         </div>
@@ -2083,10 +1966,10 @@
                                     <p><i class="fas fa-map-marker-alt"></i>Address: <a target="_blank" href="https://maps.app.goo.gl/MubXc19vjdyAgnzUA">352 Elias Motsoaledi Road,<br> Mofolo South, <br>Johannesburg, <br> 1801</a> </p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel: 078 338 7270">078 338 7270</a><br><a href="tel: 083 710 0089">083 710 0089</a></a></p>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel: 078 338 7270" target="_blank">078 338 7270</a></a></p>
                                 </li>
                                 <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com" target="_blank">contactinfo@gmail.com</a></p>
                                 </li>
                                 <div>
                                 <li>
@@ -2136,6 +2019,87 @@
     <script src="js/custom.js"></script>
     <script src="shop.js"></script>
     <script src="script.js"></script>
+    <script src="cart.js"></script>
+<!-- Section for search box -->
+    <script>
+        function searchProducts() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.filter-item');
+
+            items.forEach(item => {
+                const title = item.querySelector('.shop-item-title').textContent.toLowerCase();
+                const price = item.querySelector('.shop-item-price').textContent.toLowerCase();
+                
+                if (title.includes(query) || price.includes(query)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const tableRows = document.querySelectorAll('.table tbody tr');
+        
+            function updateButtonState() {
+                if (tableRows.length > 0) {
+                    checkoutBtn.style.pointerEvents = 'auto';  // Enable button
+                    checkoutBtn.style.opacity = '1';           // Make button fully opaque
+                } else {
+                    checkoutBtn.style.pointerEvents = 'none';  // Disable button
+                    checkoutBtn.style.opacity = '0.5';         // Make button semi-transparent
+                }
+            }
+        
+            // Call function on page load
+            updateButtonState();
+        
+            // Optionally, if rows are dynamically added/removed, call this function again to update button state
+            // Example:
+            // const observer = new MutationObserver(updateButtonState);
+            // observer.observe(document.querySelector('.table tbody'), { childList: true });
+        });
+    
+    </script>
+
+
+<!-- Section for wishlist -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add event listener to all heart icons
+        document.querySelectorAll('.mask-icon .fa-heart').forEach(function(icon) {
+            icon.addEventListener('click', function(event) {
+                event.preventDefault();  // Prevent the default action (e.g., navigating to a href)
+    
+                // Get item details
+                const itemCard = icon.closest('.products-single');
+                const title = itemCard.querySelector('.shop-item-title').innerText;
+                const price = itemCard.querySelector('.shop-item-price').innerText;
+                const imageUrl = itemCard.querySelector('.shop-item-image').src;
+    
+                // Create item object
+                const item = {
+                    title: title,
+                    price: price,
+                    imageUrl: imageUrl
+                };
+    
+                // Save to local storage
+                let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+                wishlist.push(item);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    
+                // Optionally, provide feedback
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                icon.setAttribute('title', 'Added to Wishlist');
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
