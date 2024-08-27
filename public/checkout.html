@@ -30,7 +30,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -185,7 +185,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <!-- <li class="search"><a href="#"><i class="fa fa-search"></i></a></li> -->
                         <li class="side-menu"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
 					</ul>
                 </div>
@@ -255,48 +255,6 @@
     <!-- Start Cart  -->
     <div class="cart-box-main">
         <div class="container">
-            <!-- <div class="row new-account-login">
-                <div class="col-sm-6 col-lg-6 mb-3">
-                    <div class="title-left">
-                        <h3>Account Login</h3>
-                    </div>
-                    <h5><a data-toggle="collapse" href="#formLogin" role="button" aria-expanded="false">Click here to Login</a></h5>
-                    <form class="mt-3 collapse review-form-box" id="formLogin">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="InputEmail" class="mb-0">Email Address</label>
-                                <input type="email" class="form-control" id="InputEmail" placeholder="Enter Email"> </div>
-                            <div class="form-group col-md-6">
-                                <label for="InputPassword" class="mb-0">Password</label>
-                                <input type="password" class="form-control" id="InputPassword" placeholder="Password"> </div>
-                        </div>
-                        <button type="submit" class="btn hvr-hover">Login</button>
-                    </form>
-                </div>
-                <div class="col-sm-6 col-lg-6 mb-3">
-                    <div class="title-left">
-                        <h3>Create New Account</h3>
-                    </div>
-                    <h5><a data-toggle="collapse" href="#formRegister" role="button" aria-expanded="false">Click here to Register</a></h5>
-                    <form class="mt-3 collapse review-form-box" id="formRegister">
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="InputName" class="mb-0">First Name</label>
-                                <input type="text" class="form-control" id="InputName" placeholder="First Name"> </div>
-                            <div class="form-group col-md-6">
-                                <label for="InputLastname" class="mb-0">Last Name</label>
-                                <input type="text" class="form-control" id="InputLastname" placeholder="Last Name"> </div>
-                            <div class="form-group col-md-6">
-                                <label for="InputEmail1" class="mb-0">Email Address</label>
-                                <input type="email" class="form-control" id="InputEmail1" placeholder="Enter Email"> </div>
-                            <div class="form-group col-md-6">
-                                <label for="InputPassword1" class="mb-0">Password</label>
-                                <input type="password" class="form-control" id="InputPassword1" placeholder="Password"> </div>
-                        </div>
-                        <button type="submit" class="btn hvr-hover">Register</button>
-                    </form>
-                </div>
-            </div> -->
             <div class="row">
                 <div class="col-sm-6 col-lg-6 mb-3">
                     <div class="checkout-address">
@@ -489,16 +447,15 @@
                                 </div>
                                 <div class="mb-4">
                                     <div class="custom-control custom-radio">
-                                        <input id="shippingOption1" name="shipping-option" class="custom-control-input" checked="checked" type="radio">
-                                        <label class="custom-control-label" for="shippingOption1">Standard Delivery</label> <span class="float-right font-weight-bold">FREE</span> </div>
+                                        <input id="shippingOption1" name="shipping-option" class="custom-control-input" checked="checked" type="radio" data-cost="100">
+                                        <label class="custom-control-label" for="shippingOption1">Standard Delivery</label> <span class="float-right font-weight-bold">R 100.0</span>
+                                    </div>
                                     <div class="ml-4 mb-2 small">(3-7 business days)</div>
                                     <div class="custom-control custom-radio">
-                                        <input id="shippingOption2" name="shipping-option" class="custom-control-input" type="radio">
-                                        <label class="custom-control-label" for="shippingOption2">Express Delivery</label> <span class="float-right font-weight-bold">R80.00</span> </div>
+                                        <input id="shippingOption2" name="shipping-option" class="custom-control-input" type="radio" data-cost="140">
+                                        <label class="custom-control-label" for="shippingOption2">Express Delivery</label> <span class="float-right font-weight-bold">R 140.0</span>
+                                    </div>
                                     <div class="ml-4 mb-2 small">(2-4 business days)</div>
-                                    <div class="custom-control custom-radio">
-                                        <input id="shippingOption3" name="shipping-option" class="custom-control-input" type="radio">
-                                        <label class="custom-control-label" for="shippingOption3">Next Business day</label> <span class="float-right font-weight-bold">R120.00</span> </div>
                                 </div>
                             </div>
                         </div>
@@ -507,21 +464,28 @@
                                 <div class="title-left">
                                     <h3>Shopping cart</h3>
                                 </div>
-                                <div class="rounded p-2 bg-light">
-                                    <div class="media mb-2 border-bottom">
-                                        <div class="media-body"> <a href="detail.html"> Golf T-Shirt</a>
-                                            <div class="small text-muted">Price: R800.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: R800.00</div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <!-- New code -->
+                                        <table class="table table-hover table-cart">
+                                            <thead style="background-color:lightgray; font-family:Georgia, 'Times New Roman', Times, serif;">
+                                                <tr>
+                                                    <th>Item</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="cart-items">
+                                                <!-- Cart items will be inserted here dynamically -->
+                                            </tbody>
+                                        </table>
+                
+                                        <div class="cart-total rounded p-2 bg-light">
+                                            <strong class="cart-total-title">Total Amount -</strong>
+                                            <strong><span class="cart-total-price" style="text-align: right;">R0</span></strong>
+                                            <p></p>
                                         </div>
-                                    </div>
-                                    <div class="media mb-2 border-bottom">
-                                        <div class="media-body"> <a href="detail.html"> Sweater Jeans</a>
-                                            <div class="small text-muted">Price: R600.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: R600.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="media mb-2">
-                                        <div class="media-body"> <a href="detail.html"> Denim Jackets</a>
-                                            <div class="small text-muted">Price: R1000.00 <span class="mx-2">|</span> Qty: 1 <span class="mx-2">|</span> Subtotal: R1000.00</div>
-                                        </div>
+                                        <!-- End of new code -->
                                     </div>
                                 </div>
                             </div>
@@ -529,48 +493,32 @@
                         <div class="col-md-12 col-lg-12">
                             <div class="order-box">
                                 <div class="title-left">
-                                    <h3>Your order</h3>
+                                    <hr class="my-1">
+                                    <div class="d-flex">
+                                        <h4>Tax</h4>
+                                        <div class="ml-auto font-weight-bold">15% </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <h4>Shipping Cost</h4>
+                                        <div id="shippingCost" class="ml-auto font-weight-bold">R 100</div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex gr-total">
+                                        <h5>Grand Total</h5>
+                                        <div id="grandTotal" class="ml-auto h5">R 0.0</div>
+                                    </div>
+                                    <hr>
                                 </div>
-                                <div class="d-flex">
-                                    <div class="font-weight-bold">Product</div>
-                                    <div class="ml-auto font-weight-bold">Total</div>
-                                </div>
-                                <hr class="my-1">
-                                <div class="d-flex">
-                                    <h4>Sub Total</h4>
-                                    <div class="ml-auto font-weight-bold"> R 1 440.0 </div>
-                                </div>
-                                <div class="d-flex">
-                                    <h4>Discount</h4>
-                                    <div class="ml-auto font-weight-bold"> R 140.0 </div>
-                                </div>
-                                <hr class="my-1">
-                                <div class="d-flex">
-                                    <h4>Coupon Discount</h4>
-                                    <div class="ml-auto font-weight-bold"> R 10.0 </div>
-                                </div>
-                                <div class="d-flex">
-                                    <h4>Tax</h4>
-                                    <div class="ml-auto font-weight-bold"> R 28.0 </div>
-                                </div>
-                                <div class="d-flex">
-                                    <h4>Shipping Cost</h4>
-                                    <div class="ml-auto font-weight-bold"> Free </div>
-                                </div>
-                                <hr>
-                                <div class="d-flex gr-total">
-                                    <h5>Grand Total</h5>
-                                    <div class="ml-auto h5"> R 1278 .0</div>
-                                </div>
-                                <hr> </div>
+                            </div>
                         </div>
-                        <div class="col-12 d-flex shopping-box"> <a href="checkout.html" class="ml-auto btn hvr-hover">Place Order</a> </div>
+                        <div class="btn-purchase" style="margin-top: 10%;">
+                            <button type="button" class="btn btn-dark btn-purchase"><i class="fa-solid fa-cart-shopping" style="margin-right: 6%;"></i>Place Order</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
+                
     <!-- End Cart -->
 
     <!-- Start Instagram Feed  -->
@@ -595,16 +543,25 @@
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/background.jpg" alt="" />
+                    <img src="images/slide1 (7).jpg" alt="" />
                     <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <!--  -->
+                        
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/slide1 (15).jpg" alt="" />
+                    <img src="images/itsthelifewebelievein/comm.jpg" alt="" />  
+                    <div class="hov-in">
+                        
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/slide1 (19).jpg" alt="" />
                     <div class="hov-in">
                         <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
@@ -612,7 +569,7 @@
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <img src="images/slide1 (16).jpg" alt="" />
+                    <img src="images/itsthelifewebelievein/store.jpg" alt="" />
                     <div class="hov-in">
                         <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
                     </div>
@@ -695,7 +652,7 @@
                                 <li><a href="contact-us.html">Customer Service</a></li>
                                 <li><a href="https://maps.app.goo.gl/MubXc19vjdyAgnzUA">Our Sitemap</a></li>
                                 <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
                                 <li><a href="#">Delivery Information</a></li>
                             </ul>
                         </div>
@@ -757,6 +714,343 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+
+<script> 
+document.addEventListener('DOMContentLoaded', () => {
+    loadCartFromLocalStorage();
+});
+
+function loadCartFromLocalStorage() {
+    const cartArray = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.querySelector('.cart-items');
+    cartItemsContainer.innerHTML = ''; // Clear existing items
+
+    cartArray.forEach(item => {
+        const cartRow = document.createElement('tr');
+        cartRow.classList.add('cart-row');
+        const cartRowContents = `
+            <td class="cart-item">
+                <img class="cart-item-image" src="${item.imageSrc}" width="50" height="50">
+                <span class="cart-item-title">${item.title}</span>
+            </td>
+            <td class="cart-price">Rs ${item.price}</td>
+            <td class="cart-quantity">
+                <input class="cart-quantity-input" type="number" value="${item.quantity}" style="width: 50px">
+            </td>
+        `;
+        cartRow.innerHTML = cartRowContents;
+        cartItemsContainer.append(cartRow);
+    });
+
+    updateCartTotal();
+}
+
+function updateCartTotal() {
+    const cartItemsContainer = document.querySelector('.cart-items');
+    const cartRows = cartItemsContainer.getElementsByClassName('cart-row');
+    let total = 0;
+
+    for (let i = 0; i < cartRows.length; i++) {
+        const cartRow = cartRows[i];
+        const priceElement = cartRow.getElementsByClassName('cart-price')[0];
+        const quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+        const price = parseFloat(priceElement.innerText.replace('Rs ', ''));
+        const quantity = quantityElement.value;
+        total += (price * quantity);
+    }
+
+    total = Math.round(total * 100) / 100;
+    document.querySelector('.cart-total-price').innerText = 'Rs ' + total + '.00';
+}
+
+/**New Section to allow to add to cart and have remove button */
+/* Image Filter Section */
+
+const allFilterItems = document.querySelectorAll('.filter-item');
+const allFilterBtns = document.querySelectorAll('.filter-btn');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allFilterBtns[1].classList.add('active-btn');
+});
+
+allFilterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        showFilteredContent(btn);
+    });
+});
+
+function showFilteredContent(btn){
+    allFilterItems.forEach((item) => {
+        if(item.classList.contains(btn.id)){
+            resetActiveBtn();
+            btn.classList.add('active-btn');
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+function resetActiveBtn(){
+    allFilterBtns.forEach((btn) => {
+        btn.classList.remove('active-btn');
+    });
+}
+
+
+/* Shopping Cart Section */
+if (document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded' , ready);
+}
+
+else{
+    ready();
+}
+
+
+ function ready(){
+    var removeCartItemButton = document.getElementsByClassName('btn-danger');
+    for (var i = 0 ; i < removeCartItemButton.length; i++){
+        var button = removeCartItemButton[i];
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input');
+    for(var i = 0 ;i < quantityInputs.length ; i++){
+        var input = quantityInputs[i];
+        input.addEventListener('change', quantityChanged);
+    }
+    
+    var addToCartButtons = document.getElementsByClassName('shop-item-button');
+    for(var i = 0; i< addToCartButtons.length; i++){
+        var button = addToCartButtons[i];
+        button.addEventListener('click',addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+ /* Call loadCartFromLocalStorage in your ready function to populate the cart with previously saved data. */
+ loadCartFromLocalStorage(); // Load cart from local storage
+}
+
+
+ function purchaseClicked(){
+     alert('Thank you for your purchase!!!');
+     var cartItems = document.getElementsByClassName('cart-items')[0];
+     while(cartItems.hasChildNodes()){
+         cartItems.removeChild(cartItems.firstChild)
+     }
+     /* Save to local storage */
+     saveCartToLocalStorage(); // Save state to local storage
+     updateCartTotal();
+ }
+
+function removeCartItem(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.remove();
+    /* Research code to save to local storage */
+    saveCartToLocalStorage(); // Save state to local storage
+    updateCartTotal();
+    
+}
+
+function  quantityChanged(event){
+    var input = event.target;
+    if(isNaN(input.value) || input.value <= 0 ){
+        input.value = 1;
+    }
+    /* Save to local storage */
+    saveCartToLocalStorage(); // Save state to local storage
+    updateCartTotal();
+}
+
+
+function addToCartClicked(event){
+    var button = event.target;
+    var shopItem = button.parentElement.parentElement;
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+    addItemToCart(title,price,imageSrc);
+    updateCartTotal();
+}
+
+function addItemToCart(title, price, imageSrc){
+    var cartRow = document.createElement('tr');
+    cartRow.classList.add('cart-row');
+    var cartItems = document.getElementsByClassName('cart-items')[0];
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title');
+
+    for (i = 0; i< cartItemNames.length ; i++){
+        if(cartItemNames[i].innerText == title){
+            alert('This item already has added to the cart!');
+            return
+        }
+    }
+    var cartRowContents = `
+
+        <td class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="50" height="50">
+            <span class="cart-item-title">${title}</span>                  
+        </td>
+        <td class="cart-item cart-column">
+            <span class="cart-price cart-column">${price}</span>
+        </td>
+        <td class="cart-item cart-column">
+            <input class="cart-quantity-input" type="number" value="1" style="width: 50px">
+            <button class="btn btn-danger" type="button">Remove</button>
+        </td>        
+    `;
+     
+            
+    cartRow.innerHTML = cartRowContents;
+    cartItems.append(cartRow);
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+    /*Section of 2  */
+    saveCartToLocalStorage(); // Save state to local storage
+}
+/*  Code to Save on local storage so we can access fuctions on all webpages chatGpt  */
+function saveCartToLocalStorage() {
+    var cartItems = document.getElementsByClassName('cart-items')[0];
+    var cartRows = cartItems.getElementsByClassName('cart-row');
+    var cartArray = [];
+
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i];
+        var title = cartRow.getElementsByClassName('cart-item-title')[0].innerText;
+        var price = cartRow.getElementsByClassName('cart-price')[0].innerText.replace('Rs ', '');
+        var quantity = cartRow.getElementsByClassName('cart-quantity-input')[0].value;
+        var imageSrc = cartRow.getElementsByClassName('cart-item-image')[0].src;
+
+        cartArray.push({ title, price, quantity, imageSrc });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cartArray));
+}
+
+/*  End of first section */
+/* Second Section */
+function loadCartFromLocalStorage() {
+    var cartArray = JSON.parse(localStorage.getItem('cart')) || [];
+
+    cartArray.forEach(item => {
+        addItemToCart(item.title, item.price, item.imageSrc, item.quantity);
+    });
+}
+/* End of Second section */
+
+function updateCartTotal(){
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0];
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row');
+    var total = 0;
+    for (var i = 0 ; i< cartRows.length ; i++){
+        var cartRow =cartRows[i];
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0];
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+        var price = parseFloat(priceElement.innerText.replace('Rs ' , ''))
+        var quantity = quantityElement.value;
+        total = total + (price * quantity);
+         
+    }
+    total = Math.round(total * 100 )/100;
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs '+ total + '.00';
+ 
+}
+    </script>
+
+<!-- /* Notes */
+/*
+Save Cart to Local Storage: Add items, remove items, 
+or update quantities, and then save the cart state.
+Load Cart from Local Storage: When the page loads, 
+populate the cart with previously saved items.
+With these changes, your cart data will persist 
+across page reloads, making for a more robust 
+user experience.
+
+*/ -->
+
+<!-- For Shipping cost  -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Define your cart total here (this would be dynamically calculated in a real application)
+        let cartTotal = 1000; // Example cart total
+    
+        // Function to update the total amount
+        function updateTotal() {
+            let shippingCost = parseFloat(document.querySelector('input[name="shipping-option"]:checked').getAttribute('data-cost'));
+            let taxRate = 0.15;
+            let tax = cartTotal * taxRate;
+            let grandTotal = cartTotal + shippingCost + tax;
+    
+            // Update the DOM
+            document.getElementById('shippingCost').textContent = 'R ' + shippingCost.toFixed(2);
+            document.getElementById('grandTotal').textContent = 'R ' + grandTotal.toFixed(2);
+        }
+    
+        // Initial update
+        updateTotal();
+    
+        // Add event listeners to the radio buttons
+        document.querySelectorAll('input[name="shipping-option"]').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                updateTotal();
+            });
+        });
+    });
+    </script>
+    
+
+<!-- end of Shipping cost -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Sample cart items for demonstration
+    const cartItems = [
+        { name: 'Item 1', price: 700, quantity: 2 },
+        { name: 'Item 2', price: 700, quantity: 1 }
+    ];
+
+    // Function to calculate the cart subtotal
+    function calculateSubtotal(items) {
+        return items.reduce((total, item) => total + (item.price * item.quantity), 0);
+    }
+
+    // Function to calculate the grand total
+    function calculateGrandTotal() {
+        const taxRate = 0.15; // 15%
+        const standardShippingCost = 100; // Default shipping cost
+        const expressShippingCost = 140;
+        
+        // Calculate subtotal
+        const subtotal = calculateSubtotal(cartItems);
+
+        // Get selected shipping cost
+        const selectedShippingCost = document.querySelector('input[name="shipping-option"]:checked').dataset.cost;
+
+        // Calculate tax
+        const taxAmount = subtotal * taxRate;
+
+        // Calculate grand total
+        const grandTotal = subtotal + parseFloat(selectedShippingCost) + taxAmount;
+
+        // Update HTML with calculated values
+        document.querySelector('.cart-total-price').textContent = `R ${subtotal.toFixed(2)}`;
+        document.getElementById('shippingCost').textContent = `R ${selectedShippingCost}`;
+        document.getElementById('grandTotal').textContent = `R ${grandTotal.toFixed(2)}`;
+    }
+
+    // Initialize calculation
+    calculateGrandTotal();
+
+    // Add event listeners to recalculate when shipping option changes
+    document.querySelectorAll('input[name="shipping-option"]').forEach(radio => {
+        radio.addEventListener('change', calculateGrandTotal);
+    });
+});
+
+</script>
+
 </body>
 
 </html>

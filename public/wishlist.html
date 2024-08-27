@@ -35,6 +35,19 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <link rel="stylesheet" href="path/to/fontawesome.css">
+    <style>
+        .wishlist-item {
+            margin-bottom: 20px;
+        }
+        .wishlist-item img {
+            max-width: 100px;
+        }
+    </style>
+    
+
 </head>
 
 <body>
@@ -63,18 +76,7 @@
                         </div>
                     </div>
                 </div> 
-                 <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="custom-select-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-						<option>¥ JPY</option>
-						<option>$ USD</option>
-						<option>€ EUR</option>
-					</select>
-                    </div> -->
-                    <!-- <div class="right-phone-box">
-                        <p>Call US :- <a href="#"> +11 900 800 100</a></p>
-                    </div> -->
-                    <div class="our-link">
+                <div class="our-link">
                         <ul>
                             <li><a href="login.html">Login</a></li>
                             <li><a href="my-account.html">Sign Up</a></li>
@@ -184,7 +186,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <!-- <li class="search"><a href="#"><i class="fa fa-search"></i></a></li> -->
                         <li class="side-menu"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
 					</ul>
                 </div>
@@ -242,7 +244,7 @@
                 <div class="col-lg-12">
                     <h2>Wishlist</h2>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                        <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
                         <li class="breadcrumb-item active">Wishlist</li>
                     </ul>
                 </div>
@@ -251,8 +253,113 @@
     </div>
     <!-- End All Title Box -->
 
+ 
+
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Retrieve wishlist from local storage
+        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+        const wishlistContainer = document.getElementById('wishlist');
+
+        // Generate wishlist items
+        wishlist.forEach(function(item) {
+            const itemHtml = `
+                <div class="col-lg-3 col-md-6 wishlist-item">
+                    <div class="card">
+                        <img src="${item.imageUrl}" class="card-img-top" alt="${item.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.title}</h5>
+                            <p class="card-text">${item.price}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            wishlistContainer.innerHTML += itemHtml;
+        });
+    });
+    </script> -->
+
+
+    
+    
+
+    <br><br>
+    <div class="container">
+        <h1 style="background-color:lightgray; font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;">My Wishlist</h1>
+   <br><br>     
+   <div id="wishlist" class="row" ></div>
+    </div>
+    
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const wishlistContainer = document.getElementById('wishlist');
+
+        // Retrieve wishlist from local storage
+        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+        // Generate wishlist items
+        wishlist.forEach(function(item) {
+            const itemHtml = `
+                <div class="col-lg-3 col-md-6 wishlist-item">
+                    <div class="card">
+                        <img src="${item.imageUrl}" class="card-img-top" alt="${item.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${item.title}</h5>
+                            <p class="card-text">${item.price}</p>
+                            <button class="btn btn-warning add-to-cart">Add to Cart</button>
+                            <button class="btn btn-danger remove-from-wishlist">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            wishlistContainer.innerHTML += itemHtml;
+        });
+
+        // Event delegation for dynamically added buttons
+        wishlistContainer.addEventListener('click', function(event) {
+            if (event.target.classList.contains('add-to-cart')) {
+                const itemCard = event.target.closest('.wishlist-item');
+                const title = itemCard.querySelector('.card-title').innerText;
+                const price = itemCard.querySelector('.card-text').innerText;
+                const imageUrl = itemCard.querySelector('.card-img-top').src;
+
+                // Handle adding to cart
+                // (You can replace this with your actual cart functionality)
+                alert(`Added to cart: ${title}, ${price}`);
+
+                // Optionally remove item from wishlist after adding to cart
+                removeFromWishlist(title, price, imageUrl);
+                itemCard.remove(); // Remove item from the page
+            } else if (event.target.classList.contains('remove-from-wishlist')) {
+                const itemCard = event.target.closest('.wishlist-item');
+                const title = itemCard.querySelector('.card-title').innerText;
+                const price = itemCard.querySelector('.card-text').innerText;
+                const imageUrl = itemCard.querySelector('.card-img-top').src;
+
+                // Handle removal from wishlist
+                removeFromWishlist(title, price, imageUrl);
+                itemCard.remove(); // Remove item from the page
+            }
+        });
+
+        // Function to remove an item from the wishlist
+        function removeFromWishlist(title, price, imageUrl) {
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            wishlist = wishlist.filter(item =>
+                item.title !== title || item.price !== price || item.imageUrl !== imageUrl
+            );
+            localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        }
+    });
+    </script>
+
+
+
+
+
     <!-- Start Wishlist  -->
-    <div class="wishlist-box-main">
+    <!-- <div class="wishlist-box-main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -347,7 +454,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Wishlist -->
 
     <!-- Start Instagram Feed  -->
@@ -533,6 +640,93 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItemsContainer = document.querySelector('.cart-items');
+            const cartTotalPrice = document.querySelector('.cart-total-price');
+    
+            // Retrieve cart from local storage
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+            // Calculate total
+            let totalAmount = 0;
+    
+            // Generate cart items
+            cart.forEach(function(item) {
+                const itemHtml = `
+                    <tr>
+                        <td>
+                            <img src="${item.imageUrl}" alt="${item.title}">
+                            ${item.title}
+                        </td>
+                        <td>${item.price}</td>
+                        <td>
+                            <input type="number" class="item-quantity" value="1" min="1" data-price="${item.price}">
+                        </td>
+                    </tr>
+                `;
+                cartItemsContainer.innerHTML += itemHtml;
+    
+                // Update total amount
+                totalAmount += parseFloat(item.price); // Assuming quantity is 1 by default
+            });
+    
+            // Update total price display
+            cartTotalPrice.textContent = `R${totalAmount.toFixed(2)}`;
+    
+            // Event delegation for dynamically added quantity inputs
+            cartItemsContainer.addEventListener('input', function(event) {
+                if (event.target.classList.contains('item-quantity')) {
+                    const quantityInput = event.target;
+                    const price = parseFloat(quantityInput.dataset.price);
+                    const quantity = parseInt(quantityInput.value);
+                    const row = quantityInput.closest('tr');
+    
+                    // Calculate total amount for this row
+                    const rowTotal = price * quantity;
+                    totalAmount = 0;
+    
+                    // Update the total amount for all items
+                    cartItemsContainer.querySelectorAll('.item-quantity').forEach(input => {
+                        const itemPrice = parseFloat(input.dataset.price);
+                        const itemQuantity = parseInt(input.value);
+                        totalAmount += itemPrice * itemQuantity;
+                    });
+    
+                    // Update total price display
+                    cartTotalPrice.textContent = `R${totalAmount.toFixed(2)}`;
+                }
+            });
+        });
+        </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const item = {
+                    imageUrl: this.dataset.imageUrl,
+                    title: this.dataset.title,
+                    price: parseFloat(this.dataset.price)
+                };
+
+                // Retrieve the cart from localStorage
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                // Add the item to the cart
+                cart.push(item);
+
+                // Save the updated cart back to localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+            });
+        });
+    });
+</script>
+
 </body>
 
 </html>
