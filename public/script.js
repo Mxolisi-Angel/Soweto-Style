@@ -152,7 +152,7 @@ function saveCartToLocalStorage() {
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i];
         var title = cartRow.getElementsByClassName('cart-item-title')[0].innerText;
-        var price = cartRow.getElementsByClassName('cart-price')[0].innerText.replace('Rs ', '');
+        var price = cartRow.getElementsByClassName('cart-price')[0].innerText.replace('R ', '');
         var quantity = cartRow.getElementsByClassName('cart-quantity-input')[0].value;
         var imageSrc = cartRow.getElementsByClassName('cart-item-image')[0].src;
 
@@ -181,13 +181,13 @@ function updateCartTotal(){
         var cartRow =cartRows[i];
         var priceElement = cartRow.getElementsByClassName('cart-price')[0];
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-        var price = parseFloat(priceElement.innerText.replace('Rs ' , ''))
+        var price = parseFloat(priceElement.innerText.replace('R ' , ''))
         var quantity = quantityElement.value;
         total = total + (price * quantity);
          
     }
     total = Math.round(total * 100 )/100;
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs '+ total + '.00';
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'R '+ total + '.00';
 
 }
 
