@@ -235,7 +235,7 @@
                 <div class="col-xl-7 col-lg-7 col-md-6">
                     <div class="single-product-details">
                         <h2>Soweto Style Classic Beanie</h2>
-                        <h5>Rs 250.00</h5>
+                        <h5>R 250.00</h5>
                         <p class="available-stock"><span> More than 20 available</span></p>
                         <h4>Short Description:</h4>
                         <p>Stay cozy and stylish with our Classic Soweto Style Beanie. Crafted from soft, high-quality materials, it offers a snug fit and timeless design. Perfect for chilly days or a casual look.</p>
@@ -521,14 +521,14 @@
                 newRow.innerHTML = `
                     <td><img src="${productImage}" alt="${productName}" style="width: 100px; height: auto;"></td> <!-- Thumbnail Image -->
                     <td>${productName} (Size: ${size}, Color: ${color})</td>
-                    <td>Rs ${productPrice}</td>
+                    <td>R ${productPrice}</td>
                     <td>1</td>
                 `;
                 cartItemsContainer.appendChild(newRow);
         
                 // Update total price
                 totalPrice += productPrice;
-                cartTotalPriceElement.textContent = `Rs ${totalPrice}`;
+                cartTotalPriceElement.textContent = `R ${totalPrice}`;
             });
         });
         </script>

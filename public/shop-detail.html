@@ -177,10 +177,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Shop Detail</h2>
+                    <h2>Soweto Style Classic T-Shirt</h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                        <li class="breadcrumb-item active">Shop Detail </li>
+                        <li class="breadcrumb-item active">Soweto Style Classic T-Shirt</li>
                     </ul>
                 </div>
             </div>
@@ -236,8 +236,8 @@
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-6">
                     <div class="single-product-details">
-                        <h2>Soweto Style Classic T- Shirt</h2>
-                        <h5>Rs 350.00</h5>
+                        <h2>Soweto Style Classic T-Shirt</h2>
+                        <h5>R 350.00</h5>
                         <p class="available-stock"><span> More than 20 available</span></p>
                         <h4>Short Description:</h4>
                         <p> Crafted from luxurious, soft-knit fabric, our sweater offers warmth and style for any occasion. With its classic fit and elegant design, this sweater is perfect for layering or wearing on its own. </p>
@@ -523,14 +523,14 @@
                 newRow.innerHTML = `
                     <td><img src="${productImage}" alt="${productName}" style="width: 100px; height: auto;"></td> <!-- Thumbnail Image -->
                     <td>${productName} (Size: ${size}, Color: ${color})</td>
-                    <td>Rs ${productPrice}</td>
+                    <td>R ${productPrice}</td>
                     <td>1</td>
                 `;
                 cartItemsContainer.appendChild(newRow);
         
                 // Update total price
                 totalPrice += productPrice;
-                cartTotalPriceElement.textContent = `Rs ${totalPrice}`;
+                cartTotalPriceElement.textContent = `R ${totalPrice}`;
             });
         });
         </script>

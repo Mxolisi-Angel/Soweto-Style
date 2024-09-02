@@ -233,8 +233,8 @@
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-6">
                     <div class="single-product-details">
-                        <h2>Soweto Style Teddy SS T-Shirt</h2>
-                        <h5>Rs 350.00</h5>
+                        <h2>Soweto Style Teddy T-Shirt</h2>
+                        <h5>R 350.00</h5>
                         <p class="available-stock"><span> More than 20 available</span></p>
                         <h4>Short Description:</h4>
                         <p>Add a touch of fun to your wardrobe with our Soweto Style Teddy Print T-Shirt. Crafted from soft, breathable cotton, this tee is perfect for casual days or lounging at home. It combines comfort with charming style.</p>
@@ -522,14 +522,14 @@
                 newRow.innerHTML = `
                     <td><img src="${productImage}" alt="${productName}" style="width: 100px; height: auto;"></td> <!-- Thumbnail Image -->
                     <td>${productName} (Size: ${size}, Color: ${color})</td>
-                    <td>Rs ${productPrice}</td>
+                    <td>R ${productPrice}</td>
                     <td>1</td>
                 `;
                 cartItemsContainer.appendChild(newRow);
         
                 // Update total price
                 totalPrice += productPrice;
-                cartTotalPriceElement.textContent = `Rs ${totalPrice}`;
+                cartTotalPriceElement.textContent = `R ${totalPrice}`;
             });
         });
         </script>

@@ -262,7 +262,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title shop-item-title">Knitted Golfer</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Knitted Golfer</h4>
                                 <p class="card-text shop-item-price">R 1500.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -288,7 +288,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title shop-item-title">Classic T-shirt</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Classic T-Shirt</h4>
                                 <p class="card-text shop-item-price">R 350.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -314,7 +314,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Classic Sweater</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Classic Sweater</h4>
                                 <p class="card-text shop-item-price">R 700.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -340,7 +340,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Denim Shirt</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Denim Shirt</h4>
                                 <p class="card-text shop-item-price">R 700.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -367,7 +367,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Jacket London Spice</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Jacket London Spice</h4>
                                 <p class="card-text shop-item-price">R 950.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -393,7 +393,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Classic Jacket</h4>
+                                <h4 class="card-title shop-item-title">Classic Soweto Style Jacket</h4>
                                 <p class="card-text shop-item-price">R 950.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -419,7 +419,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Knitted Sweater</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Classic Sweater</h4>
                                 <p class="card-text shop-item-price">R 1600.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -445,7 +445,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Teddy T-shirt</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Teddy T-Shirt</h4>
                                 <p class="card-text shop-item-price">R 350.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -472,7 +472,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Bucket Hat</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Bucket Hat</h4>
                                 <p class="card-text shop-item-price">R 250.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -498,7 +498,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Two-Piece Denim</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Two Piece Denim</h4>
                                 <p class="card-text shop-item-price">R 1700.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -524,7 +524,7 @@
                                 </div>
                             </div>
                                 <div class="card-body">
-                                <h4 class="card-title shop-item-title">Classic Beanie</h4>
+                                <h4 class="card-title shop-item-title">Soweto Style Classic Beanie</h4>
                                 <p class="card-text shop-item-price">R 250.00</p> 
                                 <button type="button" class="btn btn-warning mt-auto shop-item-button">Add to Cart</button>
                             
@@ -906,6 +906,41 @@
         <script src="js/form-validator.min.js"></script>
         <script src="js/contact-form-script.js"></script>
         <script src="js/custom.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Add event listener to all heart icons
+                document.querySelectorAll('.mask-icon .fa-heart').forEach(function(icon) {
+                    icon.addEventListener('click', function(event) {
+                        event.preventDefault();  // Prevent the default action (e.g., navigating to a href)
+            
+                        // Get item details
+                        const itemCard = icon.closest('.products-single');
+                        const title = itemCard.querySelector('.shop-item-title').innerText;
+                        const price = itemCard.querySelector('.shop-item-price').innerText;
+                        const imageUrl = itemCard.querySelector('.shop-item-image').src;
+            
+                        // Create item object
+                        const item = {
+                            title: title,
+                            price: price,
+                            imageUrl: imageUrl
+                        };
+            
+                        // Save to local storage
+                        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+                        wishlist.push(item);
+                        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+            
+                        // Optionally, provide feedback
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        icon.setAttribute('title', 'Added to Wishlist');
+                    });
+                });
+            });
+            </script>
+
     </body>
 
 </html>
