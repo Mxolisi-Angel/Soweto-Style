@@ -198,12 +198,12 @@
             <div class="col-xl-5 col-lg-5 col-md-6">
                     <div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\Bottle green.jpg" alt="First slide"> </div>
-                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8402.jpg" alt="Second slide"> </div>
-                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8465.jpg" alt="Third slide"> </div>
-                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8469.jpg" alt="Fourth slide"> </div>
-                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8476.jpg" alt="Fifth slide"> </div>
-                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8480.jpg" alt="Sixth slide"> </div>
+                            <div class="carousel-item active"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8402.jpg" alt="First slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8465.jpg" alt="Second slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8469.jpg" alt="Third slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8476.jpg" alt="Fourth slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\IMG_8480.jpg" alt="Fifth slide"> </div>
+                            <div class="carousel-item"> <img class="d-block w-100" src="images\shop-detail-images\knitted golfers\Bottle green.jpg" alt="Sixth slide"> </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev"> 
 						<i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -235,7 +235,7 @@
             <div class="col-xl-7 col-lg-7 col-md-6">
                 <div class="single-product-details">
                     <h2>Soweto Style Knitted Golfers</h2>
-                    <h5>Rs 1500.00</h5>
+                    <h5>R 1500.00</h5>
                     <p class="available-stock"><span> More than 20 available</span></p>
                     <h4>Short Description:</h4>
                     <p>Crafted from soft, breathable fabric, this tee offers unparalleled comfort and durability. Its classic design and vibrant color options make it a perfect addition to any person’s wardrobe.</p>
@@ -524,14 +524,14 @@
                 newRow.innerHTML = `
                     <td><img src="${productImage}" alt="${productName}" style="width: 100px; height: auto;"></td> <!-- Thumbnail Image -->
                     <td>${productName} (Size: ${size}, Color: ${color})</td>
-                    <td>Rs ${productPrice}</td>
+                    <td>R ${productPrice}</td>
                     <td>1</td>
                 `;
                 cartItemsContainer.appendChild(newRow);
         
                 // Update total price
                 totalPrice += productPrice;
-                cartTotalPriceElement.textContent = `Rs ${totalPrice}`;
+                cartTotalPriceElement.textContent = `R ${totalPrice}`;
             });
         });
     </script>
