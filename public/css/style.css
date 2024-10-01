@@ -51,7 +51,6 @@
 .ant {
     align-items: center;
     text-align: center;
-    position:
 }
 
 
@@ -1271,7 +1270,7 @@ body {
      opacity: 1;
 }
 /*------------------------------------------------------------------ Footer Main -------------------------------------------------------------------*/
- .footer-main{
+.footer-main{
      padding: 70px 0px;
      background: #202020;
 }
@@ -1426,6 +1425,7 @@ body {
      background: #2c2c2c;
      padding: 20px 0px;
      position: relative;
+     margin-bottom: -80px;
 }
  .footer-copyright p {
      text-align: center;
@@ -2100,7 +2100,7 @@ body {
 }
  .new-account-login h5 {
      font-size: 18px;
-     color: #1111111;
+     color: #111111;
      font-weight: 600;
 }
  .new-account-login h5 a:hover{
@@ -2154,8 +2154,6 @@ body {
 }
  .service-icon i{
      font-size: 34px;
-}
- .my-account-page a:hover i{
 }
  .service-desc p{
      font-size: 16px;
@@ -2277,6 +2275,7 @@ body {
  .contact-box-main{
      padding: 70px 0px;
 }
+
  .contact-info-left{
      padding: 20px;
      background: rgba(0, 53, 68, 0.1);
